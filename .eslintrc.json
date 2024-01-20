@@ -1,3 +1,18 @@
 {
-  "extends": ["oclif", "oclif-typescript"]
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard",
+    "oclif",
+    "oclif-typescript"
+  ],
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "array-bracket-spacing": ["error", "always"],
+    "block-spacing": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "object-curly-spacing": ["error", "always"],
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error"
+  }
 }
