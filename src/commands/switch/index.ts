@@ -34,9 +34,9 @@ export default class Switch extends Command {
       helpValue: `<${Object.values(Casing).join('|')}>`,
       required: true,
     }),
-    'omit-html-tags': Flags.boolean({
-      default: true,
-      description: 'Determines whether the replacer function should omit the standard HTML tags and leave them as-is.',
+    'include-html-tags': Flags.boolean({
+      default: false,
+      description: 'Determines whether the replacer function should also process the standard HTML tags.',
       required: false,
     }),
     to: Flags.string({
@@ -66,7 +66,7 @@ export default class Switch extends Command {
   _flags?: {
     dryRun: boolean;
     from: Casing;
-    omitHtmlTags: boolean;
+    includeHtmlTags: boolean;
     to: Casing;
   }
 
@@ -92,13 +92,13 @@ export default class Switch extends Command {
    */
   private static getCasingFunction (targetCasing: Casing): CasingFn {
     switch (targetCasing) {
-    case Casing.Kebab: {
-      return kebabCase
-    }
+      case Casing.Kebab: {
+        return kebabCase
+      }
 
-    case Casing.Pascal: {
-      return pascalCase
-    }
+      case Casing.Pascal: {
+        return pascalCase
+      }
     }
   }
 
@@ -111,13 +111,13 @@ export default class Switch extends Command {
    */
   private static getMatcherForCasing (casing: Casing): RegExp {
     switch (casing) {
-    case Casing.Kebab: {
-      return /<\/?([a-z]+(-[a-z]+)*)([^>]*)>?/g
-    }
+      case Casing.Kebab: {
+        return /<\/?([a-z]+(-[a-z]+)*)([^>]*)>?/g
+      }
 
-    case Casing.Pascal: {
-      return /<\/?([A-Z][a-z]*([A-Z][a-z]*)*)(?![\s\w]*>[\s\w]*\()/g
-    }
+      case Casing.Pascal: {
+        return /<\/?([A-Z][a-z]*([A-Z][a-z]*)*)(?![\s\w]*>[\s\w]*\()/g
+      }
     }
   }
 
@@ -165,7 +165,7 @@ export default class Switch extends Command {
     this._flags = {
       dryRun: flags['dry-run'],
       from: fromCasing,
-      omitHtmlTags: flags['omit-html-tags'],
+      includeHtmlTags: flags['include-html-tags'],
       to: toCasing,
     }
 
@@ -184,12 +184,11 @@ export default class Switch extends Command {
    * @returns {boolean} - `true` if the tag's casing should be switched; otherwise `false`.
    */
   private shouldSwitchTagCasing (tag: string): boolean {
-    if (this._flags?.omitHtmlTags === true) {
-      const isHtmlTag: boolean = STANDARD_HTML_ELEMENTS.includes(tag.trim().toLowerCase())
-      return !isHtmlTag
-    }
+    const isHtmlTag: boolean = STANDARD_HTML_ELEMENTS.includes(tag.trim().toLowerCase())
 
-    return true
+    return this._flags?.includeHtmlTags === true
+      ? true
+      : !isHtmlTag
   }
 
   /**
