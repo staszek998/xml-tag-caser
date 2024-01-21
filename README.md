@@ -1,24 +1,6 @@
-@staszek998/xml-tag-caser
-==========================
+# @staszek998/xml-tag-caser
 
 > Command line tool for switching the casing of the XML tags in multiple files at once.
-
----
-
-Table of contents:
-
-[//]: # (@formatter:off)
-<!-- TOC -->
-* [@staszek998/xml-tag-caser](#staszek998xml-tag-caser)
-  * [Installation](#installation)
-  * [Usage](#usage)
-    * [Arguments](#arguments)
-    * [Flags](#flags)
-      * [Required](#required)
-      * [Optional](#optional)
-    * [Examples](#examples)
-<!-- TOC -->
-[//]: # (@formatter:on)
 
 ---
 
