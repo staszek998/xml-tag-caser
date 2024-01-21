@@ -219,7 +219,7 @@ export default class Switch extends Command {
     })
 
     if (this._flags?.dryRun) {
-      console.log(modifiedContent)
+      this.log(modifiedContent)
     } else {
       writeFileSync(filePath, modifiedContent)
     }
