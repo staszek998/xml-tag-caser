@@ -4,8 +4,8 @@ import { Args, Command, Flags } from '@oclif/core'
 import { kebabCase, pascalCase } from 'change-case'
 import { glob } from 'glob'
 
-import { STANDARD_HTML_ELEMENTS } from './config.ts'
-import { Casing, CasingFn } from './contracts.ts'
+import { STANDARD_HTML_ELEMENTS } from './config.js'
+import { Casing, CasingFn } from './contracts.js'
 
 export default class Switch extends Command {
   static args = {

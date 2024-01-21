@@ -3,7 +3,7 @@ import * as path from 'node:path'
 
 import { expect, test } from '@oclif/test'
 
-import { Casing } from '@/commands/switch/contracts.ts'
+import { Casing } from '../../../src/commands/switch/contracts.js'
 
 const TEST_CASES: Array<{
   from: Casing;
