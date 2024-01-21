@@ -6,13 +6,30 @@
     "oclif",
     "oclif-typescript"
   ],
-  "plugins": ["simple-import-sort"],
+  "ignorePatterns": ["*.vue"],
   "rules": {
     "array-bracket-spacing": ["error", "always"],
     "block-spacing": ["error", "always"],
     "comma-dangle": ["error", "always-multiline"],
+    "indent": "off",
     "object-curly-spacing": ["error", "always"],
-    "simple-import-sort/exports": "error",
-    "simple-import-sort/imports": "error"
+    "perfectionist/sort-imports": [
+      "error", {
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
+        "internal-pattern": ["@/**"]
+      }
+    ],
+    "space-before-function-paren": ["error", "always"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
   }
 }
