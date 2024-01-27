@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^10
     version: 10.2.0
   oclif:
-    specifier: ^4.3.8
-    version: 4.3.8(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^4.4.0
+    version: 4.4.0(eslint@8.56.0)(typescript@5.3.3)
   shx:
     specifier: ^0.3.4
     version: 0.3.4
@@ -5687,8 +5687,8 @@ packages:
       es-abstract: 1.22.3
     dev: true
 
-  /oclif@4.3.8(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-mtu3VzDdg0R7jUymrzFP5GQPIP3LroOAY7A5sH0eCC8nW+FijiXIC0H7wxmq/pY+02GynCxTvWlnV5iDCncoeA==}
+  /oclif@4.4.0(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-uTDTr+B2FA/oCXMpDm/rAEf8e463Jaw0iEGASlo4I7gBib/P4lVFHqCAWlXOwjKsbaR/dbl1Xi3jHTppuGK23A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
