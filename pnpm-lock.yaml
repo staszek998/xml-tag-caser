@@ -12,8 +12,8 @@ dependencies:
     specifier: ^6
     version: 6.0.12
   '@oclif/plugin-plugins':
-    specifier: ^4.1.19
-    version: 4.1.19
+    specifier: ^4.1.22
+    version: 4.1.22
   change-case:
     specifier: ^5.4.2
     version: 5.4.2
@@ -1116,14 +1116,14 @@ packages:
       fast-levenshtein: 3.0.0
     dev: true
 
-  /@oclif/plugin-plugins@4.1.19:
-    resolution: {integrity: sha512-DgoI2gwUSEPQSq1epm5shv08VPXKMv26qJBpYJgyj++L4tgkVwj1JUBUry7HDQHnFir4Tcd9AbfZQ/GlkSyYBQ==}
+  /@oclif/plugin-plugins@4.1.22:
+    resolution: {integrity: sha512-TKshx/QGSsLTZRA1Gplf/AV7VIF9L8mRVZsOC1r4voBkFBYZ9XJRy1PDcOMOu0WEbi7QvvXPtbDYXMw0I8WhlQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@oclif/core': 3.18.1
       chalk: 5.3.0
       debug: 4.3.4(supports-color@8.1.1)
-      npm: 10.3.0
+      npm: 10.4.0
       npm-run-path: 4.0.1
       semver: 7.5.4
       shelljs: 0.8.5
@@ -5535,8 +5535,8 @@ packages:
     dependencies:
       path-key: 3.1.1
 
-  /npm@10.3.0:
-    resolution: {integrity: sha512-9u5GFc1UqI2DLlGI7QdjkpIaBs3UhTtY8KoCqYJK24gV/j/tByaI4BA4R7RkOc+ASqZMzFPKt4Pj2Z8JcGo//A==}
+  /npm@10.4.0:
+    resolution: {integrity: sha512-RS7Mx0OVfXlOcQLRePuDIYdFCVBPCNapWHplDK+mh7GDdP/Tvor4ocuybRRPSvfcRb2vjRJt1fHCqw3cr8qACQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     dev: false
@@ -5603,7 +5603,6 @@ packages:
       - semver
       - spdx-expression-parse
       - ssri
-      - strip-ansi
       - supports-color
       - tar
       - text-table
