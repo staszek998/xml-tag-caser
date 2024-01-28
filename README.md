@@ -1,4 +1,4 @@
-# @staszek998/xml-tag-caser
+![Cover image with the package logo and its name (xml-tag-caser)](./assets/images/cover.png "Cover image")
 
 > Command line tool for switching the casing of the XML tags in multiple files at once.
 
