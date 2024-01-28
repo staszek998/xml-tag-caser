@@ -1,6 +1,6 @@
 {
   "name": "@staszek998/xml-tag-caser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Command line tool for switching the casing of the XML tags in multiple files at once",
   "keywords": [
     "oclif",
@@ -84,12 +84,15 @@
     "eslint-config-oclif": "^5",
     "eslint-config-oclif-typescript": "^3",
     "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
     "mocha": "^10",
     "oclif": "^4.3.8",
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
   },
+  "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=18.0.0"
   },
