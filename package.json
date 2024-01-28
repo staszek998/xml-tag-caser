@@ -1,6 +1,6 @@
 {
   "name": "@staszek998/xml-tag-caser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Command line tool for switching the casing of the XML tags in multiple files at once",
   "keywords": [
     "oclif",
