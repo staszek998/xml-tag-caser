@@ -1,18 +1,12 @@
 ### oclif
 
-**/.DS_Store
 *-debug.log
 *-error.log
-/.idea
 /.nyc_output
 /dist
 /lib
-/package-lock.json
 /tmp
-/yarn.lock
 node_modules
-oclif.lock
-oclif.manifest.json
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -24,6 +18,7 @@ oclif.manifest.json
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/git_toolbox_prj.xml
 
 # AWS User-specific
 .idea/**/aws.xml
