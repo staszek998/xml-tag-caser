@@ -87,7 +87,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "mocha": "^10",
-    "oclif": "^4.3.8",
+    "oclif": "^4.7.1",
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
