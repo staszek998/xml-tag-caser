@@ -57,11 +57,11 @@
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts",
-    "prepack": "npm run build && oclif manifest && oclif readme",
+    "prepack": "yarn run build && oclif manifest && oclif readme",
     "postpack": "shx rm -f oclif.manifest.json",
-    "prepare": "npm run build",
+    "prepare": "yarn run build",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "posttest": "npm run lint",
+    "posttest": "yarn run lint",
     "version": "oclif readme && git add README.md"
   },
   "dependencies": {
