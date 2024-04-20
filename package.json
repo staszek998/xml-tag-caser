@@ -59,7 +59,7 @@
     "lint": "eslint . --ext .ts",
     "prepack": "yarn run build && oclif manifest && oclif readme",
     "postpack": "shx rm -f oclif.manifest.json",
-    "prepare": "yarn run build",
+    "prepare": "husky",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "posttest": "yarn run lint",
     "version": "oclif readme && git add README.md"
@@ -72,6 +72,8 @@
     "glob": "^10.3.10"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "@oclif/test": "^3",
     "@types/chai": "^4",
     "@types/cli-progress": "^3.11.5",
@@ -86,6 +88,7 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^9.0.11",
     "mocha": "^10",
     "oclif": "^4.8.5",
     "shx": "^0.3.4",
