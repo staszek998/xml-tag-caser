@@ -1,6 +1,6 @@
 {
   "name": "@staszek998/xml-tag-caser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command line tool for switching the casing of the XML tags in multiple files at once",
   "keywords": [
     "oclif",
@@ -59,7 +59,7 @@
     "lint": "eslint . --ext .ts",
     "prepack": "yarn run build && oclif manifest && oclif readme",
     "postpack": "shx rm -f oclif.manifest.json",
-    "prepare": "husky",
+    "prepare": "husky && yarn run build",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "posttest": "yarn run lint",
     "version": "oclif readme && git add README.md"
