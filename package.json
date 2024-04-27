@@ -90,7 +90,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^9.0.11",
     "mocha": "^10",
-    "oclif": "^4.8.5",
+    "oclif": "^4.9.0",
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
